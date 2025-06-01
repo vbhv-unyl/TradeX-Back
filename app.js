@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/user', userRouter);
+app.use('/auth', userRouter);
 app.use('/test', testRouter);
 app.use('/predict', predictRouter);
 
