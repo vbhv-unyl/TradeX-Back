@@ -19,4 +19,10 @@ app.use('/test', testRouter);
 app.use('/predict', predictRouter);
 
 connection(process.env.DATABASE_URL);
-socket(app);
+// socket(app);
+
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT: ${PORT}`);
+});

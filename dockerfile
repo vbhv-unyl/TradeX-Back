@@ -3,7 +3,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 COPY package*.json ./
-COPY dist ./dist
+COPY . .
 
 RUN npm install --production
 
